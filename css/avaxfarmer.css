@@ -3341,14 +3341,14 @@ blockquote {
   border-style: solid;
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0);
-  background-color: #f3f3f3;
-  background-image: url('../images/test.png'), url('../images/unknown.png');
+  background-color: #f3f3f300;
   background-position: 0px 0px, 0px 0px;
   background-size: auto, auto;
   background-attachment: fixed, scroll;
   background-clip: border-box;
   -webkit-text-fill-color: inherit;
 }
+
 
 .heading {
   margin: 4px;
