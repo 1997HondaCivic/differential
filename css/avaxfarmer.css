@@ -3349,7 +3349,6 @@ blockquote {
   -webkit-text-fill-color: inherit;
 }
 
-
 .heading {
   margin: 4px;
   font-family: Lato, sans-serif;
@@ -3890,8 +3889,8 @@ blockquote {
 .wallet-avax {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-right: 30px;
-  font-size: 18px;
+  padding-right: 80px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3907,10 +3906,10 @@ blockquote {
 .farmers-balance {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-right: 30px;
+  padding-right: 80px;
   font-size: 20px;
   font-weight: 400;
-  text-align: right;
+  text-align: left;
 }
 
 .wallet-and-farmers {
@@ -3926,7 +3925,7 @@ blockquote {
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  grid-template-columns: 200px repeat(auto-fit, 150px);
+  grid-template-columns: 140px repeat(auto-fit, 260px);
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
   font-size: 12px;
