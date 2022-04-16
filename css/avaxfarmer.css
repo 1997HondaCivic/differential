@@ -1,14 +1,19 @@
-#demo {
-  font-family: Satoshi, sans-serif;
-  font-size: 24px;
-  font-weight: bold; 
-  color: black;
-  text-align: center;
-  }
+#playerreflink {
+  padding: 2px;
+  height: 30px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0,0,0,.15);
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px; 
+}
 
 .footer-link {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #444;
   text-decoration: none;
 }
@@ -52,6 +57,22 @@
   position: relative;
   transition: 350ms; 
 }
+
+.margin-special-box-inner {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  margin-left: 0px;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  grid-column-gap: 0;
+  grid-row-gap: 16px;
+  grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  text-align: left;
+}
+
 .image-7:hover
 {
  transform: scale(1.05);
@@ -184,7 +205,7 @@
 }
 
 body {
-  background-color: #00000;
+  background-color: #fff;
   font-family: Satoshi, sans-serif;
   color: #000;
   font-size: 18px;
@@ -501,8 +522,13 @@ blockquote {
   padding-bottom: 160px;
 }
 
+.section.n7 {
+  background-color: transparent;
+}
+
 .section.n7.breaker {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: transparent;
 }
 
 .section.n7.hide {
@@ -511,6 +537,7 @@ blockquote {
 
 .section.no-space.n1 {
   display: none;
+  background-color: transparent;
 }
 
 .grid-color-2 {
@@ -1849,7 +1876,7 @@ blockquote {
   display: flex;
   width: 20vw;
   padding-top: 80px;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .nav-menu-pane {
@@ -1897,8 +1924,8 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
   height: 80px;
-  margin-right: 400px;
-  margin-left: 400px;
+  margin-right: auto;
+  margin-left: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1917,7 +1944,7 @@ blockquote {
   -ms-flex: 1;
   flex: 1;
   border: 1px solid transparent;
-  background-color: #fff;
+  background-color: transparent;
   mix-blend-mode: darken;
 }
 
@@ -1950,12 +1977,11 @@ blockquote {
 }
 
 .nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: static;
   top: 0px;
   z-index: 999;
   border: 1px solid transparent;
-  background-color: #fff;
+  background-color: transparent;
   box-shadow: 1px 1px 50px 0 rgba(0, 0, 0, 0.12);
   font-family: Inter, sans-serif;
   font-weight: 600;
@@ -2399,8 +2425,8 @@ blockquote {
   align-items: center;
   border-left: 1px solid #656565;
   border-radius: 5px;
-  background-color: #175ce5;
-  box-shadow: 1px 1px 3px 0 #175ce5;
+  background-color: #29a63e;
+  box-shadow: 1px 1px 3px 0 #000;
   opacity: 1;
   font-size: 16px;
   font-style: normal;
@@ -2414,7 +2440,7 @@ blockquote {
 .button-clone:hover {
   border-left-color: #333;
   border-radius: 2px;
-  background-color: #487ee9;
+  background-color: #9cdb54;
   opacity: 1;
   color: #fff;
 }
@@ -3030,14 +3056,14 @@ blockquote {
 
 .your-balance {
   display: block;
-  width: 650px;
+  width: 400px;
   max-width: 40rem;
   margin-top: 0rem;
   margin-right: auto;
   margin-left: auto;
   padding: 2rem;
   border-radius: 0.6rem;
-  background-color: rgba(215, 223, 255, 0.1);
+  background-color: hsla(0, 0%, 100%, 0.9);
   box-shadow: 1px 1px 50px 8px rgba(0, 0, 0, 0.12);
   font-family: Inter, sans-serif;
   text-align: left;
@@ -3056,7 +3082,7 @@ blockquote {
   margin-left: auto;
   padding: 0rem 3rem 2rem;
   border-radius: 0.6rem;
-  background-color: rgba(163, 173, 209, 0.1);
+  background-color: hsla(0, 0%, 100%, 0.9);
   box-shadow: 1px 1px 50px 8px rgba(0, 0, 0, 0.12);
   text-align: left;
 }
@@ -3206,7 +3232,7 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 200px;
+  height: 100px;
   min-height: 0vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3304,6 +3330,7 @@ blockquote {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  background-color: transparent;
   text-align: center;
 }
 
@@ -3313,8 +3340,14 @@ blockquote {
   padding-left: 2.5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #fff;
-  background-color: #fff;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: #f3f3f3;
+  background-image: url('../images/test.png'), url('../images/unknown.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, auto;
+  background-attachment: fixed, scroll;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
 }
 
 .heading {
@@ -3529,15 +3562,16 @@ blockquote {
 
 .content-copy-copy {
   overflow: hidden;
+  width: 400px;
   height: auto;
-  max-width: 650px;
+  max-width: 40rem;
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
   padding: 0px 0px 24px;
   border: 0px solid #000;
   border-radius: 0.6rem;
-  background-color: rgba(215, 223, 255, 0.1);
+  background-color: hsla(0, 0%, 100%, 0.9);
   box-shadow: 0 1px 50px 8px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
@@ -3557,12 +3591,14 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   font-family: Inter, sans-serif;
+  color: #000;
   font-weight: 600;
   text-align: center;
+  text-shadow: 2px 2px 0 #fff;
 }
 
 .text-field-2 {
-  width: 500px;
+  width: 375px;
   border-radius: 5px;
   text-align: center;
 }
@@ -3602,9 +3638,10 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 150px;
   margin-top: 10px;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -3619,17 +3656,17 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #175ce5;
+  background-color: #29a63e;
   font-family: Inter, sans-serif;
   color: #fff;
 }
 
 .navbar_button-copy.purple-copy:hover {
-  background-color: #487ee9;
+  background-color: #9cdb54;
   color: #fff;
 }
 
-.bnb-field {
+.avax-field {
   width: 510px;
   height: 40px;
   border-radius: 5px;
@@ -3643,9 +3680,8 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
   padding: 0.5rem 1.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3661,7 +3697,7 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #175ce5;
+  background-color: #29a63e;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   font-family: Inter, sans-serif;
@@ -3672,7 +3708,7 @@ blockquote {
 }
 
 .hire-button:hover {
-  background-color: #487ee9;
+  background-color: #9cdb54;
   color: #fff;
 }
 
@@ -3846,15 +3882,16 @@ blockquote {
 .your-farmers {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
 
-.wallet-bnb {
+.wallet-avax {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  padding-right: 30px;
+  font-size: 18px;
   font-weight: 400;
   text-align: left;
 }
@@ -3862,7 +3899,7 @@ blockquote {
 .wallet {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3870,16 +3907,18 @@ blockquote {
 .farmers-balance {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  padding-right: 30px;
+  font-size: 20px;
   font-weight: 400;
-  text-align: left;
+  text-align: right;
 }
 
 .wallet-and-farmers {
   display: -ms-grid;
   display: grid;
-  width: 500px;
-  margin-left: 38px;
+  width: 400px;
+  margin-right: 0px;
+  margin-left: 0px;
   justify-items: center;
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
@@ -3887,16 +3926,17 @@ blockquote {
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  grid-template-columns: 273px repeat(auto-fit, 209px);
+  grid-template-columns: 200px repeat(auto-fit, 150px);
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
+  font-size: 12px;
   text-align: left;
 }
 
 .max-deposi {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3904,23 +3944,25 @@ blockquote {
 .rewards {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
 
-.deposit-bnb {
+.deposit-avax {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  padding-right: 30px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
 
-.reward-bnb {
+.reward-avax {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  padding-right: 30px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3929,12 +3971,12 @@ blockquote {
   display: -ms-grid;
   display: grid;
   width: 500px;
-  margin-left: 38px;
+  margin-left: 0px;
   justify-items: center;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  grid-template-columns: 273px repeat(auto-fit, 209px);
+  grid-template-columns: 200px repeat(auto-fit, 150px);
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
   text-align: left;
@@ -3943,7 +3985,7 @@ blockquote {
 .daily-return {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3951,7 +3993,7 @@ blockquote {
 .total-return {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3959,7 +4001,7 @@ blockquote {
 .daily-return-percent {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3967,7 +4009,7 @@ blockquote {
 .return-percent {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3975,7 +4017,7 @@ blockquote {
 .deposit-fee {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3983,7 +4025,7 @@ blockquote {
 .insurance-fee {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3991,7 +4033,7 @@ blockquote {
 .deposit-percent {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
@@ -3999,21 +4041,21 @@ blockquote {
 .treasury-percent {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
 }
 
 .statitsics {
   display: block;
-  width: 650px;
+  width: 400px;
   max-width: 40rem;
   margin-top: 0rem;
   margin-right: auto;
   margin-left: auto;
   padding: 2rem;
   border-radius: 0.6rem;
-  background-color: rgba(215, 223, 255, 0.1);
+  background-color: hsla(0, 0%, 100%, 0.9);
   box-shadow: 1px 1px 50px 8px rgba(0, 0, 0, 0.12);
   font-family: Inter, sans-serif;
   text-align: left;
@@ -4024,12 +4066,12 @@ blockquote {
   display: grid;
   width: 500px;
   margin-top: 15px;
-  margin-left: 38px;
+  margin-left: 0px;
   justify-items: center;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  grid-template-columns: 273px repeat(auto-fit, 209px);
+  grid-template-columns: 273px repeat(auto-fit, 100px);
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
   text-align: left;
@@ -4061,6 +4103,143 @@ blockquote {
 .text-block-12 {
   color: #657795;
   font-weight: 600;
+}
+
+.footer-logo-link {
+  max-height: 60px;
+  min-width: 60px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.footer-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 0% 50%;
+  object-position: 0% 50%;
+}
+
+.image-4 {
+  padding-right: 10px;
+}
+
+.image-5 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.image-6 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.image-7 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.body {
+  position: static;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #f3f3f3;
+  background-image: url('../images/test.png'), url('../images/unknown.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, auto;
+  background-attachment: fixed, scroll;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+}
+
+.dailyreturnapr {
+  display: -ms-grid;
+  display: grid;
+  width: 400px;
+  margin-right: 0px;
+  margin-left: 0px;
+  justify-items: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 200px repeat(auto-fit, 100px);
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  font-size: 12px;
+  text-align: left;
+}
+
+.depositandtreasury {
+  display: -ms-grid;
+  display: grid;
+  width: 400px;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  justify-items: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 200px repeat(auto-fit, 100px);
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  font-size: 12px;
+  text-align: left;
+}
+
+.depositfee {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.treasuryfee {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.depositpercentage {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.treasury {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.grid-4 {
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.image-8 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -4277,28 +4456,9 @@ blockquote {
     transform: none;
   }
 
-  .navbar_button-copy {
-    width: 100%;
-    margin-top: 1rem;
-    margin-left: 0rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    background-color: #101111;
-  }
 
-  .navbar_button-copy.purple-copy {
-    background-color: rgba(142, 111, 181, 0.25);
-    color: #8e6fb5;
-  }
 
-  .hire-button {
-    width: 100%;
-    margin-top: 1rem;
-    margin-left: 0rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    background-color: #101111;
-  }
+
 
   .hire-button.purple-copy {
     background-color: rgba(142, 111, 181, 0.25);
@@ -4657,6 +4817,11 @@ blockquote {
   .statitsics {
     padding: 2.5rem;
   }
+
+  .footer-image {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4892,6 +5057,10 @@ blockquote {
   .statitsics {
     padding: 2rem 1rem;
   }
+
+  .footer-logo-link {
+    height: 60px;
+  }
 }
 
 #w-node-b7dc41df-8c63-c70e-3a0f-1a339b4ea1ea-5955fa5f {
@@ -4991,6 +5160,30 @@ blockquote {
   justify-self: end;
 }
 
+#w-node-_2b70ab41-27cb-892b-2f84-dc13ba67b135-5955fa5f {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+#w-node-_543e9ac5-03a1-7540-e9ec-5a84e0decbe2-5955fa5f {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
 #w-node-_46ec8a5e-e581-dc72-4612-88a04111cdaa-5955fa5f {
   -ms-grid-column-align: start;
   justify-self: start;
@@ -5011,22 +5204,22 @@ blockquote {
   justify-self: end;
 }
 
-#w-node-_46ec8a5e-e581-dc72-4612-88a04111cdba-5955fa5f {
+#w-node-_763e46c9-d223-4f19-6c2f-2382aae68f20-5955fa5f {
   -ms-grid-column-align: start;
   justify-self: start;
 }
 
-#w-node-_46ec8a5e-e581-dc72-4612-88a04111cdbc-5955fa5f {
+#w-node-_763e46c9-d223-4f19-6c2f-2382aae68f22-5955fa5f {
   -ms-grid-column-align: end;
   justify-self: end;
 }
 
-#w-node-_46ec8a5e-e581-dc72-4612-88a04111cdbe-5955fa5f {
+#w-node-_763e46c9-d223-4f19-6c2f-2382aae68f24-5955fa5f {
   -ms-grid-column-align: start;
   justify-self: start;
 }
 
-#w-node-_46ec8a5e-e581-dc72-4612-88a04111cdc0-5955fa5f {
+#w-node-_763e46c9-d223-4f19-6c2f-2382aae68f26-5955fa5f {
   -ms-grid-column-align: end;
   justify-self: end;
 }
