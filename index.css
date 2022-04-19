@@ -7,6 +7,8 @@
 
   --primary-color: #22272A;
   --secondary-color: #f0b90b;
+  --button-primary: #f0b90b;
+  --button-secondary: #ffd95e;
 
   font-family: 'Montserrat', sans-serif;
 }
